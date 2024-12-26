@@ -3,17 +3,58 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
     font-family: Arial, sans-serif;
     text-align: center;
+    padding: 20px;
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: #333;
 }
 
-.subtitle {
-    font-size: 1.5rem;
+.roadmap-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.roadmap-step {
+    width: 200px;
+    text-align: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: transform 0.3s ease;
+}
+
+.roadmap-step:hover {
+    transform: translateY(-10px);
+}
+
+.roadmap-icon {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 2vh;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
 }
