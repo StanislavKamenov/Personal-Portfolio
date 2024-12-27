@@ -1,4 +1,4 @@
-#[In Developing]
+[In Developing]
 
 # Getting Started with Create React App
 
