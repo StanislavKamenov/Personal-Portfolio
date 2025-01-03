@@ -5,6 +5,7 @@ const Header = React.lazy(() => import('./container/Header/Header'));
 const About = React.lazy(() => import('./container/About/About'));
 const Work = React.lazy(() => import('./container/Work/Work'));
 const SkillsSection = React.lazy(() => import('./container/Skills/Skills'));
+const ContactForm = React.lazy(() => import('./container/Contact/Contact'));
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Work />
       <SkillsSection />
+      <ContactForm/>
     </Suspense>
   );
 }
