@@ -4,6 +4,10 @@ import { useInView } from 'react-intersection-observer';
 import './work.css';
 
 import image1 from '../../assets/designing.png';
+import padaura from '../../assets/padaura.png'
+import SplineProject from '../../assets/3DWebsite.png'
+import Delivery from '../../assets/delivery.png'
+import oldPortfolio from '../../assets/oldPortfolio.png'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function Work() {
@@ -18,51 +22,34 @@ function Work() {
   const projects = [
     {
       id: 1,
-      image: image1,
-      title: 'Project One',
-      description: 'This is the description for project one.',
-      view: 'https://example.com',
-      githubLink: 'https://github.com/example/project-one',
+      image: padaura,
+      title: 'Padaura',
+      description: 'Woocomerce website based on WordPress',
+      view: 'https://padaura.com',
     },
     {
       id: 2,
-      image: image1,
-      title: 'Project Two',
-      description: 'This is the description for project two.',
-      view: 'https://example.com',
-      githubLink: 'https://github.com/example/project-two',
+      image: SplineProject,
+      title: '3D Website',
+      description: '3D Website created with Spline',
+      view: 'https://3-d-website-react.vercel.app/',
+      githubLink: 'https://github.com/StanislavKamenov/3D-Website-react',
     },
     {
       id: 3,
-      image: image1,
-      title: 'Project Three',
-      description: 'This is the description for project three.',
-      view: 'https://example.com',
-      githubLink: 'https://github.com/example/project-three',
+      image: Delivery,
+      title: 'Delivery Website',
+      description: 'Simple one page Website for Delivery',
+      view: 'https://zing7-project2.vercel.app/',
+      githubLink: 'https://github.com/StanislavKamenov/Zing7-Project2',
     },
     {
       id: 4,
-      image: image1,
-      title: 'Project Four',
-      description: 'This is the description for project four.',
-      view: 'https://example.com',
-      githubLink: 'https://github.com/example/project-four',
-    },
-    {
-      id: 5,
-      image: image1,
-      title: 'Project Five',
-      description: 'This is the description for project five.',
-      view: 'https://example.com',
-      githubLink: 'https://github.com/example/project-five',
-    },
-    {
-      id: 6,
-      image: image1,
-      title: 'Project Six',
-      description: 'This is the description for project six.',
-      view: 'https://example.com',
-      githubLink: 'https://github.com/example/project-six',
+      image: oldPortfolio,
+      title: 'Old Portfolio',
+      description: 'This is my Old and outdated portfolio',
+      view: 'https://st-dev-blond.vercel.app/',
+      githubLink: 'https://github.com/StanislavKamenov/PortFolio-2',
     },
   ];
 
@@ -126,7 +113,6 @@ function Work() {
                 src={project.image}
                 alt={project.title}
                 className='project-image'
-                whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.4 }}
               />
               <div className='overlay-content'>
