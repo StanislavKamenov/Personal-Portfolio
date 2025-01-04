@@ -117,3 +117,9 @@
       opacity: 1;
     }
   }
+
+  @media (max-width: 768px) {
+    .email-box {
+        font-size: 10px;
+    }
+  }
