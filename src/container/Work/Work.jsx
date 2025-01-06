@@ -3,11 +3,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './work.css';
 
-import personalPortoflio from '../../assets/personalPortoflio.png'
-import padaura from '../../assets/padaura.png'
-import SplineProject from '../../assets/3DWebsite.png'
-import Delivery from '../../assets/delivery.png'
-import oldPortfolio from '../../assets/oldPortfolio.png'
+import images from '../../components/images';
+
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function Work() {
@@ -22,14 +19,14 @@ function Work() {
   const projects = [
     {
       id: 1,
-      image: padaura,
+      image: images.padaura,
       title: 'Padaura',
       description: 'Woocomerce website based on WordPress',
       view: 'https://padaura.com',
     },
     {
       id: 2,
-      image: SplineProject,
+      image: images.SplineProject,
       title: '3D Website',
       description: '3D Website created with Spline',
       view: 'https://3-d-website-react.vercel.app/',
@@ -37,7 +34,7 @@ function Work() {
     },
     {
       id: 3,
-      image: Delivery,
+      image: images.Delivery,
       title: 'Delivery Website',
       description: 'Simple one page Website for Delivery',
       view: 'https://zing7-project2.vercel.app/',
@@ -45,7 +42,7 @@ function Work() {
     },
     {
       id: 4,
-      image: personalPortoflio,
+      image: images.personalPortoflio,
       title: 'Personal Portfolio',
       description: 'This is my Personal Portfolio',
       view: 'https://personal-portfolio-rose-omega.vercel.app/',
@@ -53,7 +50,7 @@ function Work() {
     },
     {
         id: 4,
-        image: oldPortfolio,
+        image: images.oldPortfolio,
         title: 'Old Portfolio',
         description: 'This is my Old and outdated portfolio',
         view: 'https://st-dev-blond.vercel.app/',

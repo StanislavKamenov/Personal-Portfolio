@@ -9,7 +9,7 @@ const ContactForm = React.lazy(() => import('./container/Contact/Contact'));
 
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div></div>}>
       <Navbar />
       <Header />
       <About />
