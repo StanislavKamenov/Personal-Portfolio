@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './work.css';
 
-import image1 from '../../assets/designing.png';
+import personalPortoflio from '../../assets/personalPortoflio.png'
 import padaura from '../../assets/padaura.png'
 import SplineProject from '../../assets/3DWebsite.png'
 import Delivery from '../../assets/delivery.png'
@@ -45,12 +45,20 @@ function Work() {
     },
     {
       id: 4,
-      image: oldPortfolio,
-      title: 'Old Portfolio',
-      description: 'This is my Old and outdated portfolio',
-      view: 'https://st-dev-blond.vercel.app/',
-      githubLink: 'https://github.com/StanislavKamenov/PortFolio-2',
+      image: personalPortoflio,
+      title: 'Personal Portfolio',
+      description: 'This is my Personal Portfolio',
+      view: 'https://personal-portfolio-rose-omega.vercel.app/',
+      githubLink: 'https://github.com/StanislavKamenov/Personal-Portfolio',
     },
+    {
+        id: 4,
+        image: oldPortfolio,
+        title: 'Old Portfolio',
+        description: 'This is my Old and outdated portfolio',
+        view: 'https://st-dev-blond.vercel.app/',
+        githubLink: 'https://github.com/StanislavKamenov/PortFolio-2',
+      },
   ];
 
   const totalPages = Math.ceil(projects.length / projectsPerPage);
