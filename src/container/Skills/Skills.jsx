@@ -25,7 +25,7 @@ const experiences = [
 
 function SkillsSection() {
   return (
-    <section className="skills-section-modern">
+    <section className="skills-section-modern" id='Skills'>
       <motion.h2
         className="section-title-modern"
         initial={{ opacity: 0 }}

@@ -8,7 +8,7 @@ import production from "../../assets/production.png";
 
 function About() {
     return (
-        <div className="App">
+        <div className="App" id="About">
             <div className="title">
                 <motion.span
                     initial={{ opacity: 0, y: -20 }}

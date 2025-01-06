@@ -3,8 +3,8 @@
     background: #ffffff;
     font-family: 'Roboto', sans-serif;
     border-radius: 15px;
-    margin: 30px auto;
-    max-width: 1200px;
+    margin: 15px auto;
+    max-width: 70%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -123,12 +123,35 @@
 .skill-icon-modern.wordpress { color: #21759b; }
 
 @media (max-width: 768px) {
-    .content-modern {
-        flex-direction: column;
+    .skills-section-modern {
+        padding: 30px;
+    }
+    .timeline-item-modern,
+    .skill-card-modern {
+        padding: 15px;
+    }
+    .section-title-modern {
+        font-size: 36px;
+    }
+    .timeline-year-modern {
+        font-size: 16px;
+    }
+    .timeline-desc-modern {
+        font-size: 14px;
+    }
+    .skills-title-modern {
+        font-size: 24px;
+    }
+    .skill-icon-modern {
+        font-size: 28px;
     }
 
-    .timeline-modern,
-    .skills-modern {
-        flex: 1 1 100%;
+    .skills-grid-modern {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .skill-card-modern {
+        padding: 10px;
     }
 }

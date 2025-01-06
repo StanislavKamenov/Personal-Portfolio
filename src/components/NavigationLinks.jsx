@@ -6,10 +6,10 @@ import { RxHamburgerMenu } from "react-icons/rx";
 function NavigationLinks() {
   const links = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Work', href: '/work' },
-    { name: 'Skills', href: '/skills' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'About', href: '#About' },
+    { name: 'Work', href: '#Work' },
+    { name: 'Skills', href: '#Skills' },
+    { name: 'Contact', href: '#Contact' },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

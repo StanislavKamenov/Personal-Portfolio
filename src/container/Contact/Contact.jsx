@@ -43,6 +43,7 @@ const ContactForm = () => {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
+      id="Contact"
     >
       <h2>Contact Us</h2>
       <a href="mailto:stanislavkamenov39@gmail.com" className="email-box">stanislavkamenov39@gmail.com</a>

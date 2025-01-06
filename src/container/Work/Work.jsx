@@ -85,7 +85,7 @@ function Work() {
   );
 
   return (
-    <div className='work' ref={ref}>
+    <div className='work' ref={ref} id='Work'>
       <motion.span
         initial={{ opacity: 0, y: -20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -105,7 +105,7 @@ function Work() {
             key={project.id}
             className='project-card'
             variants={cardVariants}
-            whileHover={{ scale: 1.05, boxShadow: '0px 15px 40px rgba(0,0,0,0.4)' }}
+            whileHover={{ scale: 1.05}}
             whileTap={{ scale: 0.95 }}
           >
             <div className='image-overlay'>
