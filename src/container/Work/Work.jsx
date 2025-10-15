@@ -19,13 +19,27 @@ function Work() {
   const projects = [
     {
       id: 1,
-      image: images.padaura,
-      title: 'Padaura',
-      description: 'Woocomerce website based on WordPress',
-      view: 'https://padaura.com',
+      image: images.nebulonStudios,
+      title: 'Nebulon Studios',
+      description: 'Site for personal photography',
+      view: 'https://apex-photos.vercel.app/',
     },
     {
       id: 2,
+      image: images.SkillMatch,
+      title: 'SkillMatch',
+      description: 'Platform for Freelancers, Employers, workers and clients in one',
+      view: 'https://tech-pro-nu.vercel.app/',
+    },
+    {
+      id: 3,
+      image: images.TrendFlow,
+      title: 'TrendFlow',
+      description: 'Woocomerce website from scratch',
+      view: 'https://shop-jijo.vercel.app/',
+    },
+    {
+      id: 4,
       image: images.SplineProject,
       title: '3D Website',
       description: '3D Website created with Spline',
@@ -33,29 +47,13 @@ function Work() {
       githubLink: 'https://github.com/StanislavKamenov/3D-Website-react',
     },
     {
-      id: 3,
-      image: images.Delivery,
-      title: 'Delivery Website',
-      description: 'Simple one page Website for Delivery',
-      view: 'https://zing7-project2.vercel.app/',
-      githubLink: 'https://github.com/StanislavKamenov/Zing7-Project2',
-    },
-    {
-      id: 4,
+      id: 5,
       image: images.personalPortoflio,
       title: 'Personal Portfolio',
       description: 'This is my Personal Portfolio',
       view: 'https://personal-portfolio-rose-omega.vercel.app/',
       githubLink: 'https://github.com/StanislavKamenov/Personal-Portfolio',
     },
-    {
-        id: 4,
-        image: images.oldPortfolio,
-        title: 'Old Portfolio',
-        description: 'This is my Old and outdated portfolio',
-        view: 'https://st-dev-blond.vercel.app/',
-        githubLink: 'https://github.com/StanislavKamenov/PortFolio-2',
-      },
   ];
 
   const totalPages = Math.ceil(projects.length / projectsPerPage);
