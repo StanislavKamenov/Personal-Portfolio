@@ -20,7 +20,7 @@ function Work() {
     {
       id: 1,
       image: images.ResumeAI,
-      title: 'Nebulon Studios',
+      title: 'ResumeAI',
       description: 'Site for personal photography',
       view: 'https://resumeai-rosy.vercel.app/',
     },
