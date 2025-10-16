@@ -5,6 +5,8 @@ import oldPortfolio from '../assets/oldPortfolio.png';
 import nebulonStudios from '../assets/nebulonStudios.png';
 import TrendFlow from '../assets/TrendFlow.png';
 import SkillMatch from '../assets/SkillMatch.png';
+import EagleDetailed from '../assets/EagleDetailed.png';
+import ResumeAI from '../assets/ResumeAI.png';
 
 const images = {
   personalPortoflio,
@@ -13,7 +15,9 @@ const images = {
   oldPortfolio,
   nebulonStudios,
   TrendFlow,
-  SkillMatch
+  SkillMatch,
+  EagleDetailed,
+  ResumeAI
 };
 
 export default images;

@@ -19,27 +19,41 @@ function Work() {
   const projects = [
     {
       id: 1,
+      image: images.ResumeAI,
+      title: 'Nebulon Studios',
+      description: 'Site for personal photography',
+      view: 'https://resumeai-rosy.vercel.app/',
+    },
+    {
+      id: 2,
       image: images.nebulonStudios,
       title: 'Nebulon Studios',
       description: 'Site for personal photography',
       view: 'https://apex-photos.vercel.app/',
     },
     {
-      id: 2,
+      id: 3,
+      image: images.EagleDetailed,
+      title: 'Eagle Detailed',
+      description: 'Detailing service website',
+      view: 'https://eagle-detail-site.vercel.app/',
+    },
+    {
+      id: 4,
       image: images.SkillMatch,
       title: 'SkillMatch',
       description: 'Platform for Freelancers, Employers, workers and clients in one',
       view: 'https://tech-pro-nu.vercel.app/',
     },
     {
-      id: 3,
+      id: 5,
       image: images.TrendFlow,
       title: 'TrendFlow',
       description: 'Woocomerce website from scratch',
       view: 'https://shop-jijo.vercel.app/',
     },
     {
-      id: 4,
+      id: 6,
       image: images.SplineProject,
       title: '3D Website',
       description: '3D Website created with Spline',
@@ -47,7 +61,7 @@ function Work() {
       githubLink: 'https://github.com/StanislavKamenov/3D-Website-react',
     },
     {
-      id: 5,
+      id: 7,
       image: images.personalPortoflio,
       title: 'Personal Portfolio',
       description: 'This is my Personal Portfolio',
