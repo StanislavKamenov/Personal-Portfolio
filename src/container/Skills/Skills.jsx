@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaCss3Alt, FaGitlab, FaNodeJs, FaPython, FaRust, FaWordpress, FaGithub, FaJs, FaFigma, FaSass } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss, SiSolid } from 'react-icons/si';
+import { FaReact, FaCss3Alt, FaWordpress, FaGithub, FaJs, FaSass } from 'react-icons/fa';
+import { SiTypescript, SiTailwindcss } from 'react-icons/si';
 import './skills.css';
 
 const skills = [
@@ -21,6 +21,8 @@ const experiences = [
   { year: '2022', description: 'Start creating small projects.' },
   { year: '2023', description: 'Started collaborating.' },
   { year: '2024', description: 'First client with WordPress. Started working on projects and improving skills.' },
+  { year: '2025', description: 'Became a Fivem Developer, building custom scripts and immersive server experiences.' },
+  { year: '2026', description: 'Launched my own business domain: xenoshop.net.' },
 ];
 
 function SkillsSection() {
@@ -28,12 +30,14 @@ function SkillsSection() {
     <section className="skills-section-modern" id='Skills'>
       <motion.h2
         className="section-title-modern"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        My Journey & Skills
+        My <span className="accent">Journey</span> & Skills
       </motion.h2>
+
       <div className="content-modern">
         <motion.div
           className="timeline-modern"
@@ -43,20 +47,21 @@ function SkillsSection() {
           transition={{ duration: 0.8 }}
         >
           <h3 className="timeline-title-modern">Timeline</h3>
-          <ul>
+          <div className="timeline-list">
             {experiences.map((exp, index) => (
-              <motion.li
+              <motion.div
                 key={index}
-                className="timeline-item-modern"
-                whileHover={{ scale: 1.05 }}
+                className="timeline-item-modern glass-panel"
+                whileHover={{ scale: 1.02, x: 10 }}
                 transition={{ type: 'spring', stiffness: 200 }}
               >
                 <div className="timeline-year-modern">{exp.year}</div>
                 <p className="timeline-desc-modern">{exp.description}</p>
-              </motion.li>
+              </motion.div>
             ))}
-          </ul>
+          </div>
         </motion.div>
+
         <motion.div
           className="skills-modern"
           initial={{ x: 100, opacity: 0 }}
@@ -64,13 +69,13 @@ function SkillsSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h3 className="skills-title-modern">Skills</h3>
+          <h3 className="skills-title-modern">Tech Stack</h3>
           <div className="skills-grid-modern">
             {skills.map((skill, index) => (
               <motion.div
                 key={index}
-                className="skill-card-modern"
-                whileHover={{ scale: 1.1 }}
+                className="skill-card-modern glass-panel"
+                whileHover={{ scale: 1.1, rotate: 2 }}
                 transition={{ type: 'spring', stiffness: 200 }}
               >
                 <span className={`skill-icon-modern ${skill.className}`}>{skill.icon}</span>
@@ -85,3 +90,4 @@ function SkillsSection() {
 }
 
 export default SkillsSection;
+

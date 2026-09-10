@@ -1,125 +1,127 @@
-.contact-form-container {
-    background-color: #ffffff;
+.contact-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 100px auto;
     padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    margin: 3rem auto;
-    overflow: hidden;
-    text-align: center;
-}
-
-
-  .contact-form-container h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 2rem;
-    font-weight: bold;
     position: relative;
-  }
+    z-index: 10;
+}
 
-  .email-box {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #007bff;
-    border-radius: 8px;
-    width: 50%;
-    background-color: #f9f9f9;
-    color: #007bff;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 1rem auto;
-    text-align: center;
-    transition: all 0.3s ease;
-    display: block;
+.contact-container {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: 30px;
+}
+
+.contact-header {
     text-align: center;
 }
 
+.contact-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    text-transform: uppercase;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
 
-  .email-box:hover {
-    background-color: #007bff;
-    color: white;
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
-  }
+.contact-title .accent {
+    color: var(--accent-1);
+}
 
+.contact-subtitle {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
 
-  .contact-form-container h2::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 4px;
-    background-color: #007bff;
-    margin: 0.5rem auto 0;
-    border-radius: 2px;
-  }
+.email-link {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-2);
+    text-underline-offset: 8px;
+    transition: color 0.3s ease;
+}
 
-  .contact-form {
+.email-link:hover {
+    color: var(--accent-2);
+}
+
+.contact-form-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-  }
+}
 
-  .contact-form input,
-  .contact-form textarea {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    font-family: 'Outfit', sans-serif;
     font-size: 1rem;
-    transition: all 0.3s ease;
+    color: var(--text-primary);
     outline: none;
-  }
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
 
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-  }
-
-  .contact-form textarea {
+.input-group textarea {
     resize: none;
     height: 150px;
-  }
+}
 
-  .contact-form button {
-    background-color: #007bff;
-    color: white;
-    padding: 1rem;
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--accent-1);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.submit-btn {
+    padding: 1.2rem;
+    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-family: 'Syne', sans-serif;
     font-size: 1.2rem;
+    font-weight: 700;
     cursor: pointer;
-    transition: all 0.3s ease;
-  }
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
 
-  .contact-form button:hover {
-    background-color: #0056b3;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
-  }
-
-
-  .success-message {
-    color: green;
-    font-size: 1rem;
+.success-message {
+    padding: 1rem;
+    background: rgba(0, 255, 100, 0.1);
+    border: 1px solid rgba(0, 255, 100, 0.3);
+    color: #4ade80;
+    border-radius: 8px;
     text-align: center;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    animation: fadeIn 1s ease-in-out;
-  }
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 2rem;
+}
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 2rem;
     }
-    to {
-      opacity: 1;
+    
+    .email-link {
+        font-size: 1.2rem;
     }
-  }
+}
 
-  @media (max-width: 768px) {
-    .email-box {
-        font-size: 10px;
-    }
-  }

@@ -1,25 +1,28 @@
 .skills-section-modern {
-    padding: 60px;
-    background: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 15px;
-    margin: 15px auto;
-    max-width: 70%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1400px;
+    margin: 100px auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
 }
 
 .section-title-modern {
-    font-size: 42px;
-    font-weight: 700;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     text-align: center;
-    color: #333333;
-    margin-bottom: 40px;
+    color: var(--text-primary);
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+
+.section-title-modern .accent {
+    color: var(--accent-1);
 }
 
 .content-modern {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 4rem;
 }
 
 .timeline-modern {
@@ -27,43 +30,37 @@
 }
 
 .timeline-title-modern {
-    font-size: 28px;
-    font-weight: 600;
-    color: #555555;
-    margin-bottom: 20px;
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
 }
 
-.timeline-modern ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .timeline-item-modern {
-    background: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.timeline-item-modern:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .timeline-year-modern {
-    font-size: 18px;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    color: var(--accent-2);
 }
 
 .timeline-desc-modern {
-    font-size: 16px;
-    color: #666666;
+    font-size: 1rem;
+    color: var(--text-secondary);
     line-height: 1.6;
+    margin: 0;
 }
 
 .skills-modern {
@@ -71,87 +68,51 @@
 }
 
 .skills-title-modern {
-    font-size: 28px;
-    font-weight: 600;
-    color: #555555;
-    margin-bottom: 20px;
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
 }
 
 .skills-grid-modern {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .skill-card-modern {
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
+    padding: 2rem 1rem;
     text-align: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.skill-card-modern:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    gap: 1rem;
 }
 
 .skill-icon-modern {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 3rem;
     transition: color 0.3s ease;
+}
+
+.skill-name-modern {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: var(--text-primary);
 }
 
 /* Skill-specific colors */
 .skill-icon-modern.react { color: #61dafb; }
 .skill-icon-modern.typescript { color: #3178c6; }
 .skill-icon-modern.css3 { color: #264de4; }
-.skill-icon-modern.gitlab { color: #fc6d26; }
-.skill-icon-modern.solid { color: #2c4f7c; }
-.skill-icon-modern.python { color: #3776ab; }
 .skill-icon-modern.tailwind { color: #38b2ac; }
 .skill-icon-modern.javascript { color: #f7df1e; }
 .skill-icon-modern.scss { color: #cc6699; }
-.skill-icon-modern.figma { color: #f24e1e; }
-.skill-icon-modern.rust { color: #dea584; }
-.skill-icon-modern.nodejs { color: #68a063; }
-.skill-icon-modern.github { color: #181717; }
+.skill-icon-modern.github { color: #ffffff; }
 .skill-icon-modern.wordpress { color: #21759b; }
 
 @media (max-width: 768px) {
-    .skills-section-modern {
-        padding: 30px;
-    }
-    .timeline-item-modern,
-    .skill-card-modern {
-        padding: 15px;
-    }
-    .section-title-modern {
-        font-size: 36px;
-    }
-    .timeline-year-modern {
-        font-size: 16px;
-    }
-    .timeline-desc-modern {
-        font-size: 14px;
-    }
-    .skills-title-modern {
-        font-size: 24px;
-    }
-    .skill-icon-modern {
-        font-size: 28px;
-    }
-
-    .skills-grid-modern {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 10px;
-    }
-
-    .skill-card-modern {
-        padding: 10px;
+    .content-modern {
+        flex-direction: column;
     }
 }
+
