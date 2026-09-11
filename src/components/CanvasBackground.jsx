@@ -1,6 +1,5 @@
 import React, { useRef, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import * as THREE from 'three';
 
 const ParticleWave = () => {
   const pointsRef = useRef();
@@ -9,9 +8,8 @@ const ParticleWave = () => {
   const count = 100;
   const sep = 1.5;
 
-  const [positions, phases] = useMemo(() => {
+  const positions = useMemo(() => {
     const positions = new Float32Array(count * count * 3);
-    const phases = new Float32Array(count * count);
 
     let i = 0;
     for (let xi = 0; xi < count; xi++) {
@@ -23,11 +21,10 @@ const ParticleWave = () => {
         positions[i * 3 + 1] = 0; // y
         positions[i * 3 + 2] = z;
 
-        phases[i] = Math.random() * Math.PI * 2;
         i++;
       }
     }
-    return [positions, phases];
+    return positions;
   }, [count, sep]);
 
   useFrame((state) => {
