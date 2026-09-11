@@ -6,8 +6,8 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function Work() {
   const projects = [
-    { id: 9, image: images.kristiqnaSite, title: 'Kristiqna Site', view: 'https://kristiqna-site.vercel.app/bg', githubLink: null },
-    { id: 10, image: images.sidequest, title: 'Side Quest', view: 'https://side-quest-web-seven.vercel.app/', githubLink: null },
+    { id: 9, image: images.kristiqnaSite, title: 'Amar`s Grooming', view: 'https://kristiqna-site.vercel.app/bg', githubLink: null },
+    { id: 10, image: images.sidequest, title: 'SideQuest', view: 'https://side-quest-web-seven.vercel.app/', githubLink: null },
     { id: 8, image: images.xenoshop, title: 'XenoShop', view: 'https://xenoshop.net/', githubLink: null },
     { id: 1, image: images.ResumeAI, title: 'ResumeAI', view: 'https://resumeai-rosy.vercel.app/' },
     { id: 2, image: images.nebulonStudios, title: 'Nebulon Studios', view: 'https://apex-photos.vercel.app/' },
