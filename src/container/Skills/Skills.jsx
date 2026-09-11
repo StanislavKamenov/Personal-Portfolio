@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaReact, FaCss3Alt, FaWordpress, FaGithub, FaJs, FaSass } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiSupabase, SiLua, SiThreedotjs } from 'react-icons/si';
 import './skills.css';
 
 const skills = [
@@ -13,6 +13,9 @@ const skills = [
   { name: 'SCSS', icon: <FaSass />, className: 'scss' },
   { name: 'GitHub', icon: <FaGithub />, className: 'github' },
   { name: 'WordPress', icon: <FaWordpress />, className: 'wordpress' },
+  { name: 'Supabase', icon: <SiSupabase />, className: 'supabase' },
+  { name: 'Lua', icon: <SiLua />, className: 'lua' },
+  { name: 'Three.js', icon: <SiThreedotjs />, className: 'threejs' },
 ];
 
 const experiences = [

@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import me from '../../assets/me.png';
+import { FaReact, FaJs } from 'react-icons/fa';
+import { SiThreedotjs, SiTailwindcss, SiSupabase } from 'react-icons/si';
 import './header.css';
 
 function Header() {
@@ -46,9 +48,21 @@ function Header() {
             <img src={me} className="human-image" alt="Stanislav" />
             
             {/* Floating Tech Badges */}
-            <motion.div className="tech-badge react" animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 3 }}>React</motion.div>
-            <motion.div className="tech-badge js" animate={{ y: [0, 15, 0] }} transition={{ repeat: Infinity, duration: 4, delay: 1 }}>JS</motion.div>
-            <motion.div className="tech-badge three" animate={{ y: [0, -15, 0] }} transition={{ repeat: Infinity, duration: 3.5, delay: 0.5 }}>Three.js</motion.div>
+            <motion.div className="tech-badge react" animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 3 }}>
+              <FaReact size={30} color="#61dafb" />
+            </motion.div>
+            <motion.div className="tech-badge js" animate={{ y: [0, 15, 0] }} transition={{ repeat: Infinity, duration: 4, delay: 1 }}>
+              <FaJs size={30} color="#f7df1e" />
+            </motion.div>
+            <motion.div className="tech-badge three" animate={{ y: [0, -15, 0] }} transition={{ repeat: Infinity, duration: 3.5, delay: 0.5 }}>
+              <SiThreedotjs size={30} color="#ffffff" />
+            </motion.div>
+            <motion.div className="tech-badge tailwind" animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 3.2, delay: 0.2 }}>
+              <SiTailwindcss size={30} color="#38b2ac" />
+            </motion.div>
+            <motion.div className="tech-badge supabase" animate={{ y: [0, -12, 0] }} transition={{ repeat: Infinity, duration: 3.8, delay: 0.8 }}>
+              <SiSupabase size={30} color="#3ecf8e" />
+            </motion.div>
           </div>
         </motion.div>
       </div>

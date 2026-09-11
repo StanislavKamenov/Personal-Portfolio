@@ -93,34 +93,42 @@
 
 .tech-badge {
     position: absolute;
-    padding: 10px 20px;
+    padding: 15px;
     background: var(--glass-bg);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid var(--glass-border);
-    border-radius: 30px;
-    font-family: 'Syne', sans-serif;
-    font-weight: 600;
-    color: var(--text-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 10;
 }
 
 .tech-badge.react {
     top: -20px;
-    right: -20px;
-    color: #61dafb;
+    right: -10px;
 }
 
 .tech-badge.js {
-    bottom: 40px;
-    left: -30px;
-    color: #f7df1e;
+    bottom: 30px;
+    left: -20px;
 }
 
 .tech-badge.three {
-    bottom: -20px;
+    bottom: -15px;
     right: 20px;
-    color: var(--accent-2);
+}
+
+.tech-badge.tailwind {
+    top: 50px;
+    left: -20px;
+}
+
+.tech-badge.supabase {
+    top: 45%;
+    right: -30px;
 }
 
 @media (max-width: 900px) {

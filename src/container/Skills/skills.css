@@ -109,6 +109,9 @@
 .skill-icon-modern.scss { color: #cc6699; }
 .skill-icon-modern.github { color: #ffffff; }
 .skill-icon-modern.wordpress { color: #21759b; }
+.skill-icon-modern.supabase { color: #3ecf8e; }
+.skill-icon-modern.lua { color: #000080; }
+.skill-icon-modern.threejs { color: #ffffff; }
 
 @media (max-width: 768px) {
     .content-modern {

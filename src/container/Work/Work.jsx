@@ -6,14 +6,12 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function Work() {
   const projects = [
-    { id: 8, image: 'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop', title: 'XenoShop', view: 'https://xenoshop.net/', githubLink: null },
+    { id: 9, image: images.kristiqnaSite, title: 'Kristiqna Site', view: 'https://kristiqna-site.vercel.app/bg', githubLink: null },
+    { id: 10, image: images.sidequest, title: 'Side Quest', view: 'https://side-quest-web-seven.vercel.app/', githubLink: null },
+    { id: 8, image: images.xenoshop, title: 'XenoShop', view: 'https://xenoshop.net/', githubLink: null },
     { id: 1, image: images.ResumeAI, title: 'ResumeAI', view: 'https://resumeai-rosy.vercel.app/' },
     { id: 2, image: images.nebulonStudios, title: 'Nebulon Studios', view: 'https://apex-photos.vercel.app/' },
     { id: 3, image: images.EagleDetailed, title: 'Eagle Detailed', view: 'https://eagle-detail-site.vercel.app/' },
-    { id: 4, image: images.SkillMatch, title: 'SkillMatch', view: 'https://tech-pro-nu.vercel.app/' },
-    { id: 5, image: images.TrendFlow, title: 'TrendFlow', view: 'https://shop-jijo.vercel.app/' },
-    { id: 6, image: images.SplineProject, title: '3D Website', view: 'https://3-d-website-react.vercel.app/', githubLink: 'https://github.com/StanislavKamenov/3D-Website-react' },
-    { id: 7, image: images.personalPortoflio, title: 'Portfolio', view: 'https://personal-portfolio-rose-omega.vercel.app/', githubLink: 'https://github.com/StanislavKamenov/Personal-Portfolio' },
   ];
 
   return (
